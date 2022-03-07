@@ -1754,7 +1754,7 @@ section.support .support-row .right-column{
     .footer-top-menu {
         width: auto;
     }
-    section.footer-content .top-content ul li {
+    .footer-content .top-content ul li {
         margin-right: clamp(8vw, .1vw, 6rem);
     }
     .footer-top-menu ul li a {
@@ -1763,9 +1763,13 @@ section.support .support-row .right-column{
     .footer-content .mid-content{
         padding: 5rem 0rem;
     }
+    .mid-content .discription{
+        line-height: clamp(3rem, 1vw + 2.5rem, 4.5rem);
+    }
     .discrption-social{
         max-width: 100%;
         margin-bottom: 6rem;
+        
     }
     .footer-widgets{
         width: 100%;
