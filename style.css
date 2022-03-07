@@ -1348,8 +1348,9 @@ a.blog-more:hover{
         width: 100%;
         border-radius: 1.5rem;
     }
-    .blog-row .title {
+    .blog-row a.title {
         min-height: auto;
+        margin: 0;
         margin-bottom: clamp(.2rem, .1vw + .2rem, .7rem);
     }
     .blog-single:first-child .img-container::after {
@@ -1358,6 +1359,7 @@ a.blog-more:hover{
     }
     .blog-meta {
         line-height: 1;
+        margin: 0;
         margin-bottom: clamp(1rem, 1vw + 1rem, 2rem);
     }
     .blog-experctt {
@@ -1723,7 +1725,7 @@ section.footer-content .bottom-content div span, section.footer-content .bottom-
         width: clamp(.1rem, 1vw + .66rem, 2.3rem);
     }
     .features-container {
-        font-size: clamp(.1rem, 1vw + .6rem, 2.3rem);
+        font-size: clamp(.6rem, 1vw + .6rem, 2.3rem);
     }
 
     /* ==================================
