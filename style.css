@@ -1558,10 +1558,37 @@ section.support .support-row .right-column{
     left: 0;
     bottom: 0;
 }
+svg.footer-bg-line-one {
+    stroke-dasharray: 470;
+    stroke-dashoffset: -11;
+    animation: footer-bg-line-one 3s;
+}
+@keyframes footer-bg-line-one {
+    0%{
+        stroke-dashoffset: 465;
+    }
+    100%{
+        stroke-dashoffset: -11;
+    }
+}
 .footer-bg-line-two{
     position: absolute;
     left: 0;
     bottom: 0;
+
+}
+svg.footer-bg-line-two {
+    stroke-dasharray: 470;
+    stroke-dashoffset: -20;
+    animation: footer-bg-line-one 3s;
+}
+@keyframes footer-bg-line-one {
+    0%{
+        stroke-dashoffset: 465;
+    }
+    100%{
+        stroke-dashoffset: -20;
+    }
 }
 .footer-bg-diamond{
     position: absolute;
