@@ -1520,7 +1520,7 @@ section.support .support-row .right-column{
     background-color: #fff;
     margin: 0 auto;
 }
-.features {
+.footer-area .features {
     background-color: #49CEFE;
     padding: .59rem 0;
 }
@@ -1552,6 +1552,49 @@ section.support .support-row .right-column{
     position: relative;
     z-index: 1;
     color: #9EE5FF;
+}
+.footer-bg-line-one{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+svg.footer-bg-line-one {
+    stroke-dasharray: 470;
+    stroke-dashoffset: -11;
+    animation: footer-bg-line-one 3s;
+}
+@keyframes footer-bg-line-one {
+    0%{
+        stroke-dashoffset: 465;
+    }
+    100%{
+        stroke-dashoffset: -11;
+    }
+}
+.footer-bg-line-two{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+svg.footer-bg-line-two {
+    stroke-dasharray: 470;
+    stroke-dashoffset: -20;
+    animation: footer-bg-line-one 3s;
+}
+@keyframes footer-bg-line-one {
+    0%{
+        stroke-dashoffset: 465;
+    }
+    100%{
+        stroke-dashoffset: -20;
+    }
+}
+.footer-bg-diamond{
+    position: absolute;
+    width: 14.8rem;
+    left: 0;
+    bottom: 0;
 }
 .footer-content .top-content {
     display: flex;
@@ -1743,13 +1786,19 @@ section.support .support-row .right-column{
                     FOOTER
        ================================== */
     
+    .footer-bg-line-one,
+    .footer-bg-line-two,
+    .footer-bg-diamond{
+        visibility: hidden;
+    }
     .footer-content .top-content {
         align-items: flex-start;
+        justify-content: space-between;
         padding-top: 6vh;
         padding-bottom: 3rem;;
     }
     .footer-logo {
-        width: 100%;
+        width: 18rem;
         margin-bottom: 3rem;
     }
     .footer-top-menu {
@@ -1780,7 +1829,10 @@ section.support .support-row .right-column{
     .footer-widget.widget-two,
     .footer-widget.widget-three {
         margin: 0;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
+    }
+    .mid-content h4 {
+        margin-bottom: 1.8rem;
     }
     .footer-widget.widget-three{
         margin: 0;
@@ -1799,24 +1851,63 @@ section.support .support-row .right-column{
         padding-left: clamp(1rem, 1vw + 1rem, 2rem);
         padding-right: clamp(1rem, 1vw + 1rem, 2rem);
     }
+    .footer-content .bottom-content .left-side span{
+        padding-left: clamp(1rem, 1vw + 1rem, 2rem);
+    }
     .footer-content .bottom-content div a:first-child{
         padding-left: 0;
     }
 }
 @media only screen and (max-width: 768px){
 
+    .footer-bg-line-one,
+    .footer-bg-line-two,
+    .footer-bg-diamond{
+        visibility: visible;
+        transform: scaleX(-1);
+    }
+    .footer-bg-line-one{
+        position: absolute;
+        left: auto;
+        right: -40px;
+        bottom: -140px;
+        height: clamp(50rem, 14vw + 80vw, 71rem);
+    }
+    .footer-bg-line-two{
+        position: absolute;
+        left: auto;
+        right: -27px;
+        bottom: -47px;
+        height: clamp(35rem, 14vw + 50vw, 55rem);
+    }
+    .footer-bg-diamond{
+        position: absolute;
+        width: clamp(1.5rem, 13vw + 1.5rem, 30rem);
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
     .footer-content .top-content{
         flex-direction: column;
     }
     .footer-content .top-content ul {
         align-items: flex-start;
     }
+    .footer-widgets {
+        flex-direction: column;
+    }
+    .footer-content .bottom-content{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media only screen and (max-width: 500px) {
     
     .footer-content .top-content ul {
-        
         flex-direction: column;
+    }
+    .footer-top-menu ul li a {
+        line-height: 1.2;
     }
     /* ==================================
                     FOOTER
@@ -1825,6 +1916,9 @@ section.support .support-row .right-column{
     .footer-widgets{
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+    .footer-content .bottom-content{
+        align-items: flex-start;
     }
 }
 
