@@ -25,6 +25,7 @@ COMMON STYLES
 }
 :root{
     --title-color: #1D2A80;
+    --miyn-color: #2DB9EB;
 }
 *{
     margin: 0;
@@ -182,6 +183,7 @@ h4 {
 h5 {
     font-size: 2rem;
     line-height: 3rem;
+    font-family: 'gilroy_bold';
 }
 h6 {
     font-size: 1.6rem;
@@ -501,6 +503,126 @@ a.get-started{
         border: .1rem solid transparent;
     }
 }
+
+
+/*   ===============================================
+                    UNDER THE HOOD
+     =============================================== */
+
+.under-the-hood{
+    background-color: #F6FCFF;
+    padding-top: 8.5rem;
+}
+.under-the-hood .title-row{
+    text-align: center;
+}
+.under-the-hood .title-row h5{
+    color: var(--miyn-color);
+    font-size: 1.7rem;
+    letter-spacing: .32rem;
+    margin-bottom: .8rem;
+}
+.under-the-hood .title-row h5{
+    margin-bottom: .8rem;
+}
+.under-the-hood .title-row .content{
+    margin-bottom: 8rem;
+}
+.under-the-hood .btn-section{
+    max-width: calc(100% - 11rem);
+    margin: 0 auto;
+    border-radius: 3rem;
+    height: 6.2rem;
+    background-color: #ECFAFF;
+    display: flex;
+    border: .3rem solid #fff;
+    padding: .4rem;
+    margin-bottom: 8rem;
+}
+.under-the-hood .btn-section ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-family: 'gilroy_semibold';
+    backdrop-filter: drop-shadow(0px 2px 11px #CAD1FF);
+    
+}
+.under-the-hood .btn-section ul a{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: 'gilroy_semibold';
+}
+.under-the-hood .btn-section a {
+    height: 5rem;
+    width: 17rem;
+}
+.under-the-hood .btn-section .active{
+    background-color: #FFF;
+}
+.under-the-hood  .bootom-section{
+    display: flex;
+    background-color: #fff;
+    height: 60rem;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+.under-the-hood .left-column{
+    width: calc(100% - 53rem);
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+.under-the-hood .left-column img{
+    position: absolute;
+}
+.under-the-hood .left-column .img-one{
+    top: 0;
+    left: 0;
+    width: 38.7rem;
+}
+.under-the-hood .left-column .img-two{
+    top: 8.67rem;
+    left: -11.6rem;
+    width: 55.64rem;
+    height: 41.5rem;
+}
+.under-the-hood .left-column .img-three{
+    bottom: 4.8rem;
+    right: 17rem;
+    width: 32.1rem;
+}
+.under-the-hood .left-column .img-four{
+    bottom: 4.8rem;
+    right: 2.1rem;
+    width: 24.7rem;
+}
+
+
+.under-the-hood .right-column{
+    width: 52.5rem;
+    padding: 0 7rem 0 3rem;
+}
+.under-the-hood .right-column h2{
+    margin-bottom: 2.5rem;
+}
+.under-the-hood .sub-title{
+    font-size: 2.1rem;
+    line-height: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.under-the-hood .bootom-section .content{
+    line-height: 3.6rem;
+    margin-bottom: 3.5rem;
+}
+a.view-details{
+    background-color: #DCF6FF;
+    width: 20.8rem;
+}
+
 
 /* =================================
         why choose miyn app
