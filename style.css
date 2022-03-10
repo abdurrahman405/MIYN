@@ -1010,7 +1010,7 @@ a.social.two.span-2 {
 .cta .cta-row{
     background-color: var(--title-color);
     width: 103.17rem;
-    height: 17.8rem;
+    min-height: 17.8rem;
     border-radius: 1.5rem;
     margin-left: calc(100% - 105.67rem);
     margin-bottom: 14.2rem;
@@ -1040,7 +1040,6 @@ a.social.two.span-2 {
     top: -2rem;
 }
 .cta .cta-row .shield-container .shield{
-    background-image: url(img/banner\ miyn\ shield.png);
     width: 27.3rem;
     height: 22.2rem;
     background-size: cover;
@@ -1049,7 +1048,6 @@ a.social.two.span-2 {
 }
 .cta .cta-row .line-container{
     position: absolute;
-    background-image: url(img/cta\ line.svg);
     width: 23rem;
     height: 18rem;
     right: 0rem;
@@ -1076,6 +1074,7 @@ svg.cta-arrow-3 {
     width: calc(100% - 7.5rem);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     z-index: 1;
 }
@@ -1105,9 +1104,10 @@ span.attract-underline::after {
 }
 .cta .text-area .button{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: calc(100% - 43rem);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .cta .text-area .button a{
     width: 16.5rem;
@@ -1119,6 +1119,57 @@ span.attract-underline::after {
     background-color: #9EE5FF;
 }
 
+@media only screen and (max-width: 1050px) {
+
+    .cta{
+        margin-bottom: 3.5rem;
+    }
+    .cta .cta-row{
+        padding-left: 0;
+        padding: clamp(1.5rem, 3vw, 5rem);
+        width: calc(100% - 1.5rem);
+        margin: 0;
+    }
+    .cta .cta-row::before{
+        width: 100%;
+        left: 1.5rem;
+        top: 1.5rem;
+    }
+    .cta .cta-row .shield-container{
+        display: none;
+    }
+    .cta .text-area .text{
+        width: 50%;
+    }
+    .cta .text-area .button{
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    
+    .cta .cta-row .line-container{
+        display: none;
+    }
+    .cta .text-area{
+        width: 100%;
+    }
+    .cta .text-area .text{
+        width: 100%;
+        margin-bottom: 2.5rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    .cta .text-area .button{
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cta .text-area .button{
+        justify-content: flex-start;
+    }
+}
 
 
 /* =================================
