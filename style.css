@@ -864,7 +864,7 @@ section.why-choose{
         width: auto;
         margin-right: 0rem
     }
-    .why-choose-row .bottom-row .features .single-feature .content{;
+    .why-choose-row .bottom-row .features .single-feature .content{
         font-size: clamp(.6rem, 1vw + .6rem, 2.3rem);
     }
     .why-choose-row .bottom-row .features .single-feature .chack-mark {
@@ -1007,7 +1007,7 @@ a.social.two.span-2 {
                CTA
    ================================= */
 
-section.cta .cta-row{
+.cta .cta-row{
     background-color: var(--title-color);
     width: 103.17rem;
     height: 17.8rem;
@@ -1018,7 +1018,7 @@ section.cta .cta-row{
     padding-left: 17.5rem;
     display: flex;
 }
-section.cta .cta-row::before{
+.cta .cta-row::before{
     content: '';
     position: absolute;
     width: calc(100% - 4.3rem);
@@ -1029,17 +1029,17 @@ section.cta .cta-row::before{
     border-radius: 1.5rem;
     z-index: -1;
 }
-section.cta .cta-row .line-container{
+.cta .cta-row .line-container{
     position: absolute;
 }
-section.cta .cta-row .shield-container{
+.cta .cta-row .shield-container{
     position: absolute;
     width: 27.3rem;
     height: 22.2rem;
     left: -8rem;
     top: -2rem;
 }
-section.cta .cta-row .shield-container .shield{
+.cta .cta-row .shield-container .shield{
     background-image: url(img/banner\ miyn\ shield.png);
     width: 27.3rem;
     height: 22.2rem;
@@ -1047,7 +1047,7 @@ section.cta .cta-row .shield-container .shield{
     position: relative;
     display: flex;
 }
-section.cta .cta-row .line-container{
+.cta .cta-row .line-container{
     position: absolute;
     background-image: url(img/cta\ line.svg);
     width: 23rem;
@@ -1057,7 +1057,7 @@ section.cta .cta-row .line-container{
     border-radius: 1.5rem;
     background-size: cover;
 }
-section.cta .cta-row .shield-container .shield svg{
+.cta .cta-row .shield-container .shield svg{
     position: absolute;
 }
 svg.cta-arrow-1 {
@@ -1072,21 +1072,21 @@ svg.cta-arrow-3 {
     left: 10.7rem;
     top: 8rem;
 }
-section.cta .text-area{
+.cta .text-area{
     width: calc(100% - 7.5rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1;
 }
-section.cta .text-area .text{
+.cta .text-area .text{
     color: #9EE5FF;
     font-size: 2.7rem;
     line-height: 3.88rem;
     width: calc(100% - 34.5rem);
     font-family: 'gilroy_bold';
 }
-section.cta .text-area .text .white-text{
+.cta .text-area .text .white-text{
     color: #FFF;
 }
 span.attract-underline{
@@ -1103,19 +1103,19 @@ span.attract-underline::after {
     left: 0;
     bottom: -3rem;
 }
-section.cta .text-area .button{
+.cta .text-area .button{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 43rem);
 }
-section.cta .text-area .button a{
+.cta .text-area .button a{
     width: 16.5rem;
     background-color: #fff;
     font-size: 1.2rem;
     line-height: 2.23rem;
 }
-section.cta .text-area .button a:hover{
+.cta .text-area .button a:hover{
     background-color: #9EE5FF;
 }
 
