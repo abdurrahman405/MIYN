@@ -531,7 +531,7 @@ a.get-started{
 .under-the-hood .btn-section{
     max-width: calc(100% - 11rem);
     margin: 0 auto;
-    border-radius: 3rem;
+    border-radius: 6rem;
     height: 6.2rem;
     background-color: #ECFAFF;
     display: flex;
@@ -552,12 +552,15 @@ a.get-started{
 .under-the-hood .btn-section ul a{
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
     font-family: 'gilroy_semibold';
-}
-.under-the-hood .btn-section a {
     height: 5rem;
-    width: 17rem;
+    padding: 2rem;
+    font-size: 1rem;
+}
+.under-the-hood .btn-section a .img-container {
+    width: 2.26rem;
+    height: 2.26rem;
+    margin-right: 1rem;
 }
 .under-the-hood .btn-section .active{
     background-color: #FFF;
@@ -581,25 +584,29 @@ a.get-started{
 .under-the-hood .left-column .img-one{
     top: 0;
     left: 0;
-    width: 38.7rem;
+    width: 25rem;
 }
 .under-the-hood .left-column .img-two{
     top: 8.67rem;
     left: -11.6rem;
-    width: 55.64rem;
-    height: 41.5rem;
+    width: auto;
+    height: auto;
 }
 .under-the-hood .left-column .img-three{
-    bottom: 4.8rem;
-    right: 17rem;
-    width: 32.1rem;
+    bottom: 0;
+    right: 14rem;
+    width: 39rem;
 }
 .under-the-hood .left-column .img-four{
     bottom: 4.8rem;
     right: 2.1rem;
     width: 24.7rem;
 }
-
+.under-the-hood .left-column .img-five {
+    width: 18rem;
+    right: 9rem;
+    top: 9rem;
+}
 
 .under-the-hood .right-column{
     width: 52.5rem;
