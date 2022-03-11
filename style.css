@@ -184,6 +184,9 @@ h5 {
     font-size: 2rem;
     line-height: 3rem;
     font-family: 'gilroy_bold';
+    letter-spacing: .32rem;
+    color: #2DB9EB;
+    text-transform: uppercase;
 }
 h6 {
     font-size: 1.6rem;
@@ -519,10 +522,6 @@ a.get-started{
 .under-the-hood .title-row h5{
     color: var(--miyn-color);
     font-size: 1.7rem;
-    letter-spacing: .32rem;
-    margin-bottom: .8rem;
-}
-.under-the-hood .title-row h5{
     margin-bottom: .8rem;
 }
 .under-the-hood .title-row .content{
@@ -536,7 +535,7 @@ a.get-started{
     background-color: #ECFAFF;
     display: flex;
     border: .3rem solid #fff;
-    padding: .4rem;
+    padding: .4rem .35rem;
     margin-bottom: 8rem;
 }
 .under-the-hood .btn-section ul{
@@ -544,7 +543,7 @@ a.get-started{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'gilroy_semibold';
     backdrop-filter: drop-shadow(0px 2px 11px #CAD1FF);
     
@@ -553,9 +552,10 @@ a.get-started{
     display: flex;
     align-items: center;
     font-family: 'gilroy_semibold';
-    height: 5rem;
-    padding: 2rem;
-    font-size: 1rem;
+    height: 100%;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
 }
 .under-the-hood .btn-section a .img-container {
     width: 2.26rem;
@@ -582,30 +582,37 @@ a.get-started{
     position: absolute;
 }
 .under-the-hood .left-column .img-one{
-    top: 0;
+    top: 0px;
     left: 0;
-    width: 25rem;
+    width: 29rem;
+    height: 29rem;
+    border-radius: 1.5rem;
+    z-index: -14;
 }
 .under-the-hood .left-column .img-two{
-    top: 8.67rem;
-    left: -11.6rem;
-    width: auto;
-    height: auto;
+    top: 5.67rem;
+    left: 38rem;
+    width: 18.8rem;
+    z-index: 1;
 }
 .under-the-hood .left-column .img-three{
-    bottom: 0;
-    right: 14rem;
-    width: 39rem;
+    top: 7rem;
+    left: -5rem;
+    height: 41.6rem;
+    width: 55.6rem;
+    box-shadow: 0 1.33rem 4rem rgba(214, 214, 214, .25);
 }
 .under-the-hood .left-column .img-four{
-    bottom: 4.8rem;
-    right: 2.1rem;
-    width: 24.7rem;
+    top: 25.8rem;
+    left: 11.1rem;
+    width: 40.1rem;
+    height: 32.2rem;
 }
 .under-the-hood .left-column .img-five {
-    width: 18rem;
-    right: 9rem;
-    top: 9rem;
+    width: 27rem;
+    height: 35rem;
+    left: 34rem;
+    top: 21rem;
 }
 
 .under-the-hood .right-column{
@@ -935,12 +942,8 @@ section.social-area {
     width: calc(100% - 76rem);
 }
 .social-area h5 {
-    font-size: 1.7rem;
-    line-height: 3rem;
+    font-size: 1.7rem;;
     font-family: 'gilroy_bold';
-    text-transform: uppercase;
-    letter-spacing: .32rem;
-    color: #2DB9EB;
     margin-bottom: .8rem;
 }
 .social-area .title-row h2 {
@@ -1007,10 +1010,13 @@ a.social.two.span-2 {
                CTA
    ================================= */
 
+.cta{
+    margin-bottom: 14rem;
+}
 .cta .cta-row{
     background-color: var(--title-color);
     width: 103.17rem;
-    height: 17.8rem;
+    min-height: 17.8rem;
     border-radius: 1.5rem;
     margin-left: calc(100% - 105.67rem);
     margin-bottom: 14.2rem;
@@ -1040,7 +1046,6 @@ a.social.two.span-2 {
     top: -2rem;
 }
 .cta .cta-row .shield-container .shield{
-    background-image: url(img/banner\ miyn\ shield.png);
     width: 27.3rem;
     height: 22.2rem;
     background-size: cover;
@@ -1049,7 +1054,6 @@ a.social.two.span-2 {
 }
 .cta .cta-row .line-container{
     position: absolute;
-    background-image: url(img/cta\ line.svg);
     width: 23rem;
     height: 18rem;
     right: 0rem;
@@ -1076,6 +1080,7 @@ svg.cta-arrow-3 {
     width: calc(100% - 7.5rem);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     z-index: 1;
 }
@@ -1105,9 +1110,10 @@ span.attract-underline::after {
 }
 .cta .text-area .button{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: calc(100% - 43rem);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .cta .text-area .button a{
     width: 16.5rem;
@@ -1119,6 +1125,193 @@ span.attract-underline::after {
     background-color: #9EE5FF;
 }
 
+@media only screen and (max-width: 1050px) {
+
+    .cta{
+        margin-bottom: 3.5rem;
+    }
+    .cta .cta-row{
+        padding-left: 0;
+        padding: clamp(1.5rem, 3vw, 5rem);
+        width: calc(100% - 1.5rem);
+        margin: 0;
+    }
+    .cta .cta-row::before{
+        width: 100%;
+        left: 1.5rem;
+        top: 1.5rem;
+    }
+    .cta .cta-row .shield-container{
+        display: none;
+    }
+    .cta .text-area .text{
+        width: 50%;
+    }
+    .cta .text-area .button{
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    
+    .cta .cta-row .line-container{
+        display: none;
+    }
+    .cta .text-area{
+        width: 100%;
+    }
+    .cta .text-area .text{
+        width: 100%;
+        margin-bottom: 2.5rem;
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    .cta .text-area .button{
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cta .text-area .button{
+        justify-content: flex-start;
+    }
+}
+
+/* ====================================
+            BOOKING LANDING PAGE
+   ==================================== */
+
+.booking-landing-psge{
+    margin-bottom: 4rem;
+}
+.booking-landing-psge .title-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 5.5rem;
+}
+.booking-landing-psge .title-col{
+    max-width: calc(100% - 21rem);
+}
+.booking-landing-psge .title-col h5{
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+}
+.booking-landing-psge .title-col h2{
+    max-width: 54rem;
+    margin-bottom: 2rem;
+}
+.booking-landing-psge .btn-col{
+    width: 21rem;
+}
+.booking-landing-psge .btn-col a{
+    width: 20.8rem;
+    background-color: var(--miyn-color);
+    color: #FFF;
+}
+
+
+.booking-landing-psge .feature-row{
+    display: flex;
+}
+.booking-landing-psge .single-feature{
+    display: flex;
+    align-items: center;
+    margin-right: 2.2rem;
+}
+.booking-landing-psge .icon-older{
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 1.5rem;
+}
+.booking-landing-psge .text-holder{
+
+}
+
+
+.booking-landing-psge .page-container{
+    width: 100%;
+}
+.page-container .page-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem .5rem;
+    position: relative;
+}
+.page-container .page-row::before{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.68) 5.78%, #FFFFFF 76.34%);
+}
+.page-container .page-row::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.68) 5.78%, #FFFFFF 76.34%);
+}
+.page-col{
+    width: calc(20% - 1.4rem);
+    height: 45.826rem;
+    border: 2.5rem solid;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+.page-col img{
+    transition-duration: 2s;
+}
+.page-col:nth-child(1):hover img{
+    transform: translateY(-41.5%);
+}
+.page-col:nth-child(2):hover img{
+    transform: translateY(-56%);
+}
+.page-col:nth-child(3):hover img{
+    transform: translateY(-61.5%);
+}
+.page-col:nth-child(4):hover img{
+    transform: translateY(-61.5%);
+}
+.page-col:nth-child(5:hover) img{
+    transform: translateY(-61.5%);
+}
+.page-col:nth-child(odd){
+    border-color: #EBFAFF;
+}
+.page-col:nth-child(even){
+    border-color: #EEF0FF;
+}
+.btn-container{
+    position: absolute;
+    display: flex;
+    width: 13.5rem;
+    justify-content: space-between;
+    right: 27rem;
+    top: calc(50% - 2.75rem);
+    z-index: 2;
+}
+.btn-container .left-btn,
+.btn-container .right-btn
+{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1rem solid;
+    box-shadow: 0 1rem 3rem rgba(154, 167, 255, 0.51);
+}
+.btn-container .right-btn{
+    background-color: var(--title-color);
+}
 
 
 /* =================================
@@ -1260,11 +1453,6 @@ h6.features-title {
 }
 .miyn-testimonial .testimonial-title-row h5{
     font-size: 1.7rem;
-    line-height: 3rem;
-    letter-spacing: 0.32rem;
-    font-family: 'gilroy_bold';
-    text-transform: uppercase;
-    color: #2DB9EB;
     margin-bottom: 2rem;
 }
 .miyn-testimonial .testimonial-title-row h2{
@@ -1315,11 +1503,12 @@ h6.features-title {
 .reviews-meta-content {
     width: calc(100% - 8.1rem);
 }
-.reviews-meta-content h5 {
+.reviews-meta-content .name {
     line-height: 1.1;
     font-family: 'gilroy_bold';
+    font-size: 2rem;
 }
-.reviews-meta-content h6 {
+.reviews-meta-content .title {
     line-height: 1.1;
     font-family: 'gilroy_medium';
     font-weight: 400;
@@ -1388,11 +1577,6 @@ h6.features-title {
 }
 .faq-area .title-row h5{
     font-size: 1.7rem;
-    line-height: 3rem;
-    letter-spacing: .32rem;
-    text-transform: uppercase;
-    font-family: 'gilroy_bold';
-    color: #2DB9EB;
     margin-bottom: .8rem;
 }
 .faq-area .title-row h2{
@@ -1426,9 +1610,11 @@ h6.features-title {
     align-items: center;
     cursor: pointer;
 }
-.faq-area .faq-single-item .faq-title-area h5{
+.faq-area .faq-single-item .faq-title-area h6{
     font-family: 'gilroy_bold';
     width: calc(100% - 5rem);
+    font-size: 2rem;
+    line-height: 4.4rem;
 }
 .faq-area .faq-single-item .faq-plus-item{
     width: 3.8rem;
@@ -1502,11 +1688,6 @@ h6.features-title {
 }
 .miyn-blog .blog-title h5{
     font-size: 1.7rem;
-    line-height: 3rem;
-    letter-spacing: 0.32rem;
-    font-family: 'gilroy_bold';
-    text-transform: uppercase;
-    color: #2DB9EB;
     margin-bottom: .8rem;
 }
 .miyn-blog .blog-title h2{
