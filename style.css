@@ -1240,12 +1240,20 @@ span.attract-underline::after {
     padding: 0rem .5rem;
     position: relative;
 }
+.page-container .page-row::before{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.68) 5.78%, #FFFFFF 76.34%);
+}
 .page-container .page-row::after{
     content: '';
     position: absolute;
-    width: 100%;
+    right: 0;
+    width: 20%;
     height: 100%;
-    background-image: linear-gradient(90deg, rgba(255 255 255 / 100%) 4%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255 255 255 / 100%) 96%);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.68) 5.78%, #FFFFFF 76.34%);
 }
 .page-col{
     width: calc(20% - 1.4rem);
@@ -1254,6 +1262,24 @@ span.attract-underline::after {
     border-radius: 1.5rem;
     object-fit: cover;
     overflow: hidden;
+}
+.page-col img{
+    transition-duration: 2s;
+}
+.page-col:nth-child(1):hover img{
+    transform: translateY(-41.5%);
+}
+.page-col:nth-child(2):hover img{
+    transform: translateY(-56%);
+}
+.page-col:nth-child(3):hover img{
+    transform: translateY(-61.5%);
+}
+.page-col:nth-child(4):hover img{
+    transform: translateY(-61.5%);
+}
+.page-col:nth-child(5:hover) img{
+    transform: translateY(-61.5%);
 }
 .page-col:nth-child(odd){
     border-color: #EBFAFF;
@@ -1264,10 +1290,10 @@ span.attract-underline::after {
 .btn-container{
     position: absolute;
     display: flex;
-    width: 12rem;
+    width: 13.5rem;
     justify-content: space-between;
-    right: 30rem;
-    top: 50%;
+    right: 27rem;
+    top: calc(50% - 2.75rem);
     z-index: 2;
 }
 .btn-container .left-btn,
@@ -1281,6 +1307,7 @@ span.attract-underline::after {
     align-items: center;
     justify-content: center;
     border: .1rem solid;
+    box-shadow: 0 1rem 3rem rgba(154, 167, 255, 0.51);
 }
 .btn-container .right-btn{
     background-color: var(--title-color);
